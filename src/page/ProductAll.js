@@ -6,7 +6,7 @@ function ProductAll() {
 
   console.log(productList);
   const getProducts = async () => {
-    let url = "http://localhost:5000/products";
+    let url = "https://my-json-server.typicode.com/josungwong/shopingmol6-9/products";
     let response = await fetch(url);
     let data = await response.json();
     setProductList(data);
